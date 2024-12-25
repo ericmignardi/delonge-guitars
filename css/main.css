@@ -1,0 +1,302 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-bg-colour: #0A0A0A;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 1rem;
+    background-color: var(--primary-bg-colour);
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    /* min-height: 100vh; */
+}
+
+/* NAVIGATION */
+
+nav {
+    background-color: var(--primary-bg-colour);
+    padding: 0 20px;
+    border-bottom: 1px solid #e0433c;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar-logo {
+    font-size: x-large;
+    font-family: Poppins, sans-serif;
+    color: azure;
+}
+
+.navbar-logo a {
+    text-decoration: none;
+    color: azure;
+}
+
+.navbar-logo h1 {
+    padding: 10px;
+}
+
+.navbar-items ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.navbar-items a {
+    text-decoration: none;
+    color: azure;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.navbar-items a:hover {
+    background-color: azure;
+    color: var(--primary-bg-colour);
+}
+
+/* HERO */
+
+.hero-container {
+    /* min-height: 100vh; */
+    background: url("/images/bg.jpg") center/cover no-repeat;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.hero-text {
+    padding: 10px;
+}
+
+.hero-text h1 {
+    font-family: Poppins, sans-serif;
+    color: azure;
+    font-size: 4rem;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    color: #ade5fe;
+    margin-bottom: 20px;
+    line-height: 2;
+}
+
+.hero-text a {
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: #e0433c;
+    color: azure;
+    padding: 10px;
+}
+
+.hero-image {
+    text-align: right;
+    padding: 10px 10px;
+    margin-top: 10px;
+}
+
+/* GUITARS */
+
+.current {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/current.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.current-container {
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.current-items {
+    margin: 50px 0;
+}
+
+.current-items h1 {
+    font-family: Poppins, sans-serif;
+    color: azure;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.current-items h2 {
+    font-family: Poppins, sans-serif;
+    font-size: 1.5rem;
+    color: #ade5fe;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.current-items p {
+    color: azure;
+    text-align: center;
+    line-height: 2;
+}
+
+.es-333-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 40px;
+}
+
+.es-333-image img {
+    width: 400px;
+    border-radius: 10px;
+    border: 1px solid #ade5fe;
+    filter: grayscale(100);
+    display: flex;
+    justify-self: center;
+}
+
+.es-333-items h1 {
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    color: azure;
+}
+
+.es-333-items h2 {
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    color: #ade5fe;
+}
+
+.es-333-items p {
+    text-align: center;
+    color: azure;
+    line-height: 2;
+}
+
+.stratocaster-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 40px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/guitar-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.stratocaster-image img {
+    display: flex;
+    justify-self: center;
+    width: 400px;
+    border-radius: 10px;
+    border: 1px solid #ade5fe;
+}
+
+.stratocaster-items h1 {
+    font-family: Poppins, sans-serif;
+    color: azure;
+    text-align: center;
+}
+
+.stratocaster-items h2 {
+    font-family: Poppins, sans-serif;
+    color: #ade5fe;
+    text-align: center;
+}
+
+.stratocaster-items p {
+    color: azure;
+    line-height: 2;
+    text-align: center;
+}
+
+/* ABOUT */
+
+.about {
+    /* min-height: 100vh; */
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/about-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about-container {
+    background-color: var(--primary-bg-colour);
+    border: 1px solid #ade5fe;
+    border-radius: 10px;
+    width: 550px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.about-container h2 {
+    font-family: Poppins, sans-serif;
+    color: azure;
+}
+
+.about-container p {
+    color: azure;
+    line-height: 1.5;
+}
+
+/* FOOTER */
+
+.footer {
+    text-align: center;
+    color: azure;
+    padding: 10px;
+    border-top: 1px solid #ade5fe;
+}
+
+/* MEDIA */
+
+@media screen and (max-width:768px) {
+    .navbar-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr; /* Stack the hero text and image */
+    }
+
+    .stratocaster-container, .es-333-container {
+        grid-template-columns: 1fr; /* Stack the guitar images and text */
+    }
+}
+
+@media screen and (max-width:480px) {
+    .navbar-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr; /* Stack the hero text and image */
+    }
+    
+    .stratocaster-container, .es-333-container {
+        grid-template-columns: 1fr; /* Stack the guitar images and text */
+    }
+}
