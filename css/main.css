@@ -13,9 +13,7 @@ body {
     font-size: 1rem;
     background-color: var(--primary-bg-colour);
     max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
-    /* min-height: 100vh; */
+    margin: 0 auto;
 }
 
 /* NAVIGATION */
@@ -69,7 +67,6 @@ nav {
 /* HERO */
 
 .hero-container {
-    /* min-height: 100vh; */
     background: url("/images/bg.jpg") center/cover no-repeat;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -161,28 +158,31 @@ nav {
     padding: 40px 40px;
 }
 
-.es-333-image img {
+.es-333-image img, .stratocaster-image img {
     width: 400px;
     border-radius: 10px;
-    border: 1px solid #ade5fe;
-    filter: grayscale(100);
+    border: 1px solid azure;
     display: flex;
     justify-self: center;
 }
 
-.es-333-items h1 {
+.es-333-image img {
+    filter: grayscale(100);
+}
+
+.es-333-items h1, .stratocaster-items h1 {
     text-align: center;
     font-family: Poppins, sans-serif;
     color: azure;
 }
 
-.es-333-items h2 {
+.es-333-items h2, .stratocaster-items h2 {
     text-align: center;
     font-family: Poppins, sans-serif;
     color: #ade5fe;
 }
 
-.es-333-items p {
+.es-333-items p, .stratocaster-items p {
     text-align: center;
     color: azure;
     line-height: 2;
@@ -194,42 +194,15 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 40px 40px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/guitar-bg.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/stratocaster-bg.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.stratocaster-image img {
-    display: flex;
-    justify-self: center;
-    width: 400px;
-    border-radius: 10px;
-    border: 1px solid #ade5fe;
-}
-
-.stratocaster-items h1 {
-    font-family: Poppins, sans-serif;
-    color: azure;
-    text-align: center;
-}
-
-.stratocaster-items h2 {
-    font-family: Poppins, sans-serif;
-    color: #ade5fe;
-    text-align: center;
-}
-
-.stratocaster-items p {
-    color: azure;
-    line-height: 2;
-    text-align: center;
-}
-
 /* ABOUT */
 
 .about {
-    /* min-height: 100vh; */
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
@@ -242,7 +215,7 @@ nav {
 
 .about-container {
     background-color: var(--primary-bg-colour);
-    border: 1px solid #ade5fe;
+    border: 1px solid azure;
     border-radius: 10px;
     width: 550px;
     margin: 50px auto;
@@ -278,12 +251,13 @@ nav {
     }
 
     .hero-container {
-        grid-template-columns: 1fr; /* Stack the hero text and image */
+        grid-template-columns: 1fr;
     }
 
     .stratocaster-container, .es-333-container {
-        grid-template-columns: 1fr; /* Stack the guitar images and text */
+        grid-template-columns: 1fr;
     }
+
 }
 
 @media screen and (max-width:480px) {
@@ -293,10 +267,14 @@ nav {
     }
 
     .hero-container {
-        grid-template-columns: 1fr; /* Stack the hero text and image */
+        grid-template-columns: 1fr;
+    }
+
+    .current-items p, .es-333-items p, .stratocaster-items p {
+        padding: 0 20px;
     }
     
     .stratocaster-container, .es-333-container {
-        grid-template-columns: 1fr; /* Stack the guitar images and text */
+        grid-template-columns: 1fr;
     }
 }
